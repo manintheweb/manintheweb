@@ -1,0 +1,21 @@
+//
+// Font //
+//
+$font-primary: 'Heebo', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$font-secondary: $font-playfair;
+$font-weight-black: 900;
+$font-weight-extra-bold: 800;
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-light: 300;
+$font-weight-thin: 100;
+
+//
+// Colors //
+//
+$color-teal-grad-09: linear-gradient(95deg,rgba(0,163,153,.9),rgba(0,163,153,.9) 45%,rgba(0, 92, 163, 0.9));
+$color-purple-grad-09: linear-gradient(95deg,rgba(50, 0, 110, .9),rgba(50, 0, 110, .9) 45%,rgba(118, 35, 108, .9));
+$color-blue: #0052CC;
+$color-blue-darker: #0747A6;
+$color-blue-lighter: #0065FF;

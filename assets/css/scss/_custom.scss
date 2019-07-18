@@ -1,0 +1,70 @@
+//
+// Custom Styles //
+//
+
+
+//
+// Default Button, Link //
+//
+/*
+a {
+	color: $color-blue;
+	@include transition(linear 0.1s);
+	&:hover {
+		color: $color-blue-lighter;
+		text-decoration: none;
+	}
+}*/
+
+//
+// Portfolio page styles //
+//
+
+%port-meta-bg {
+	background-color: $color-white;
+	border-radius: 6px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: $color-black-01 !important;
+}
+
+.port-meta-header {
+	@extend %port-meta-bg;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+.port-meta-box {
+	@extend %port-meta-bg;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 20px;
+}
+
+body.port-page {
+	background-color: $bg-grey-lighter;
+	color: $color-dark;
+}
+
+//
+// Navbar Responsive - Screen resolution above 992px(lg) //
+//
+@include breakpoint-above(lg) {
+	.resume-btn {
+		display: block;
+	}
+	.resume-txt {
+		display: none;
+	}
+}
+
+//
+// Navbar Responsive - Screen resolution less than 992px(lg) //
+//
+@include breakpoint-less(lg) {
+	.resume-btn {
+		display: none;
+	}
+	.resume-txt {
+		display: block;
+	}
+}
